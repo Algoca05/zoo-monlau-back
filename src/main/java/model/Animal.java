@@ -19,7 +19,7 @@ public class Animal {
     private String especie;
     private Integer salud;
     @ManyToOne
-    @JoinColumn(name = "empleado_id")
-    private Empleado empleado;
+    @JoinColumn(name = "cuidador_id")
+    private Cuidador cuidador;
 
 }

@@ -5,15 +5,18 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.Date;
 import java.util.List;
 
 @Data@AllArgsConstructor@NoArgsConstructor
 @Entity
-@Table(name = "empleados")
-public class Empleado {
+@Table(name = "cuidadores")
+public class Cuidador {
     @Id@GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private String nombre;
-    @OneToMany(mappedBy = "empleado", cascade = CascadeType.ALL, orphanRemoval = true)
+    private Date fecha;
+    private Double sueldo;
+    @OneToMany(mappedBy = "cuidador", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<Animal> animales;
 }
