@@ -1,6 +1,6 @@
-package repositorio;
+package monlau.zoo.repositorio;
 
-import model.Animal;
+import monlau.zoo.model.Animal;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 

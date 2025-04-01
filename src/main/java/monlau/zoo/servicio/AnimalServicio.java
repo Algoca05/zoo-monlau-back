@@ -1,10 +1,10 @@
-package servicio;
+package monlau.zoo.servicio;
 
 
-import model.Animal;
+import monlau.zoo.model.Animal;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import repositorio.AnimalRepositorio;
+import monlau.zoo.repositorio.AnimalRepositorio;
 
 import java.util.List;
 

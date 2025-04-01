@@ -1,10 +1,10 @@
-package monlau.zoo.controller;
+package controller;
 
 import lombok.RequiredArgsConstructor;
-import monlau.zoo.model.Animal;
+import model.Animal;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
-import monlau.zoo.servicio.AnimalServicio;
+import servicio.AnimalServicio;
 
 import java.util.List;
 
