@@ -1,6 +1,7 @@
 package monlau.zoo.model;
 
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -20,6 +21,7 @@ public class Animal {
     private Integer salud;
     @ManyToOne
     @JoinColumn(name = "cuidador_id")
+    @JsonBackReference
     private Cuidador cuidador;
 
 }
