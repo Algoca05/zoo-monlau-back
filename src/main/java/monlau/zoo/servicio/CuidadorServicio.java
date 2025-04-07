@@ -22,4 +22,8 @@ public class CuidadorServicio {
     public void eliminarCuidador(Integer id) {
         cuidadorRepositorio.deleteById(id);
     }
+
+    public Cuidador obtenerCuidadorPorId(Integer id){
+        return cuidadorRepositorio.findById(id).get();
+    }
 }

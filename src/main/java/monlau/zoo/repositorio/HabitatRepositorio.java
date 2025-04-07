@@ -1,4 +1,7 @@
 package monlau.zoo.repositorio;
 
-public interface Habitatrepositorio {
+import monlau.zoo.model.Habitat;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface HabitatRepositorio extends JpaRepository<Habitat, Integer> {
 }

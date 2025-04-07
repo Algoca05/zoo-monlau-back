@@ -3,6 +3,7 @@ package monlau.zoo.servicio;
 
 import monlau.zoo.dto.AnimalWithCuidadorIdDTO;
 import monlau.zoo.model.Animal;
+import monlau.zoo.model.Cuidador;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import monlau.zoo.repositorio.AnimalRepositorio;
@@ -34,5 +35,11 @@ public class AnimalServicio {
     public void eliminarAnimal(Integer id){
         animalRepositorio.deleteById(id);
     }
+
+    public Animal obtenerAnimalPorId(Integer id){
+        return animalRepositorio.findById(id).get();
+    }
+
+
 
 }
